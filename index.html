@@ -11,18 +11,29 @@
     <!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Montserrat|Open+Sans" rel="stylesheet">
 	<style>
 	body {
 	  padding-top: 50px;
 	}
 	.navbar {
-    background: #F8F8F8 !important;
-    border-color: #080808;
-}
+		background: #F8F8F8 !important;
+		border-color: #080808;
+	}
 	.navbar {
     min-height: 80px;
     margin-bottom: 20px;
     border: 1px solid transparent;
+	}
+	.navbar-inverse .navbar-nav > li > a {
+		font-family: "Montserrat";
+		color: #777;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+		color: #222;
+		background-color: transparent;
 	}
 	.navbar-nav {
 	  width: 100%;
@@ -76,14 +87,44 @@
 	
 	#hero-header-section {
 		background: #18BC9C;
-		padding: 90px 0px 90px;
+		padding: 100px 0px 100px;
 		color: #fff;
+	}
+	
+	#frameworks-container {
+		background: #f5f5f5;
+		padding: 90px 0px 90px;
+	}	
+	.carousel-inner.onebyone-carosel { margin: auto; width: 90%; }
+	.onebyone-carosel .active.left { left: -33.33%; }
+	.onebyone-carosel .active.right { left: 33.33%; }
+	.onebyone-carosel .next { left: 33.33%; }
+	.onebyone-carosel .prev { left: -33.33%; }
+	.carousel-control.left {
+		background: none; 
+	}
+	#frameworks-container .carousel-control.left {
+		background: none; 
+	}
+	#frameworks-container .carousel-control.right {
+		background: none; 
+	}
+	#frameworks-container .carousel-control {
+		top: 40%;
+		width: 5%;
+	}
+	#frameworks-container .item .col-md-4 {
+		padding: 10px;
+	}
+	#frameworks-container .item .text-center {
+		margin-top: 10px;
+		color:
 	}
 	
 	#howto-container {
 		background: #fff;
-		padding: 80px 0px 80px;
-	}
+		padding: 80px 0px 90px;
+	}	
 	.why-icon-box img {
 		width: 60px;
 		margin: 0 auto;		
@@ -111,11 +152,11 @@
 		</div>
 		<div class="collapse navbar-collapse">
 		  <ul class="nav navbar-nav">
-			<li><a href="#">DEMO</a></li>
-			<li><a href="#about">API</a></li>
-			<li><a href="#contact">FORK ME ON GITHUB</a></li>
-			<li><a href="#contact">DOCKER</a></li>
-			<li><a href="#contact">JOIN US</a></li>
+			<li><a href="http://javapoint.com" target="_blank">DEMO</a></li>
+			<li><a href="http://api.contrib.com" target="_blank">API</a></li>
+			<li><a href="https://github.com/DevelopersContrib/contrib-builder-frameworks/archive/master.zip" target="_blank">FORK ME ON GITHUB</a></li>
+			<li><a href="https://hub.docker.com/r/contribvnoc/" target="_blank">DOCKER</a></li>
+			<li><a href="http://developers.contrib.com" target="_blank">JOIN US</a></li>
 		  </ul>
 		</div><!--/.nav-collapse -->
 	  </div>
@@ -136,12 +177,87 @@
 		</div>
 	</div>
 	
+	<div id="frameworks-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="frame-well">
+						<div id="myCarousel" class="carousel fdi-Carousel slide">
+						 <!-- Carousel items -->
+							<div class="carousel fdi-Carousel slide" id="eventCarousel" data-interval="0">
+								<div class="carousel-inner onebyone-carosel">
+									<div class="item active">
+										<div class="col-md-4">
+											<a href="http://linked.com/" target="_blank"><img src="http://rdbuploads.s3.amazonaws.com/screenshots/screenshot-linked.png" class="img-responsive center-block"></a>
+											<div class="text-center">Linked.com</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="col-md-4">
+											<a href="http://photostream.com/" target="_blank"><img src="http://rdbuploads.s3.amazonaws.com/screenshots/screenshot-www.photostream.com.png" class="img-responsive center-block"></a>
+											<div class="text-center">Photostream.com</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="col-md-4">
+											<a href="http://codechallenge.com/" target="_blank"><img src="http://rdbuploads.s3.amazonaws.com/screenshots/screenshot-www.codechallenge.com.png" class="img-responsive center-block"></a>
+											<div class="text-center">Codechallenge.com</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="col-md-4">
+											<a href="http://shoppingcorp.com/" target="_blank"><img src="http://rdbuploads.s3.amazonaws.com/screenshots/screenshot-shoppingcorp.com.png" class="img-responsive center-block"></a>
+											<div class="text-center">Shoppingcorp.com</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="col-md-4">
+											<a href="http://icontent.com/" target="_blank"><img src="http://rdbuploads.s3.amazonaws.com/screenshots/screenshot-icontent.com.png" class="img-responsive center-block"></a>
+											<div class="text-center">Icontent.com</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="col-md-4">
+											<a href="http://handyman.com/" target="_blank"><img src="http://rdbuploads.s3.amazonaws.com/screenshots/screenshot-handyman.com.png" class="img-responsive center-block"></a>
+											<div class="text-center">Handyman.com</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="col-md-4">
+											<a href="http://eservices.com/" target="_blank"><img src="http://rdbuploads.s3.amazonaws.com/screenshots/screenshot-eservices.com.png" class="img-responsive center-block"></a>
+											<div class="text-center">Eservices.com</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="col-md-4">
+											<a href="http://cowork.com/" target="_blank"><img src="http://rdbuploads.s3.amazonaws.com/screenshots/screenshot-cowork.com.png" class="img-responsive center-block"></a>
+											<div class="text-center">Cowork.com</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="col-md-4">
+											<a href="http://consultants.com/" target="_blank"><img src="http://rdbuploads.s3.amazonaws.com/screenshots/screenshot-consultants.com.png" class="img-responsive center-block"></a>
+											<div class="text-center">Consultants.com</div>
+										</div>
+									</div>
+								</div>
+								<a class="left carousel-control" href="#eventCarousel" data-slide="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+								<a class="right carousel-control" href="#eventCarousel" data-slide="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+							</div>
+							<!--/carousel-inner-->
+						</div><!--/myCarousel-->
+					</div><!--/well-->
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<div id="howto-container">
 		<div class="container text-center">
 			<div class="row">
 				<!-- -->
 				<div class="row">
-				<div class="col-md-12"><h2>How To Get Started</h2><br></div>
+				<div class="col-md-12"><h2>How To Get Started</h2><hr></div>
 					  <div class="col-sm-7 five-three">
 						<div class="row">
 						  <div class="col-sm-4">
@@ -219,6 +335,27 @@
 	  } else {
 		$('nav').removeClass('shrink');
 	  }
+	});
+	</script>
+	<script>
+	$(document).ready(function () {
+		$('#myCarousel').carousel({
+			interval: 10000
+		})
+		$('.fdi-Carousel .item').each(function () {
+			var next = $(this).next();
+			if (!next.length) {
+				next = $(this).siblings(':first');
+			}
+			next.children(':first-child').clone().appendTo($(this));
+
+			if (next.next().length > 0) {
+				next.next().children(':first-child').clone().appendTo($(this));
+			}
+			else {
+				$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+			}
+		});
 	});
 	</script>
   </body>
